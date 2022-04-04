@@ -8,6 +8,7 @@ const router = express.Router();
 /*************************************************************** 
 	PUNTO 1
 	- Retornar todos los productos del array. “/api/products”,
+	Utiliza la variable products que se encuentra en este archivo
  ***************************************************************/
 // Tu código acá
 

@@ -17,7 +17,7 @@ beforeEach(async () => {
 });
 
 describe("PUNTO 1", () => {
-	it("Debe ser un método GET a '/api/products'", async () => {
+	it("Debe ser un método GET a '/api/products'",  () => {
 		expect(responseGetProducts.req.method).toBe("GET");
 		expect(responseGetProducts.res.statusCode).toBe(200);
 	});
@@ -27,14 +27,14 @@ describe("PUNTO 1", () => {
 	});
 });
 Xdescribe("PUNTO 2", () => {
-	it("Debe ser un método GET a '/api/products/:id'", async () => {
+	it("Debe ser un método GET a '/api/products/:id'",  () => {
 		expect(productID.req.method).toBe("GET");
 		expect(productID.res.statusCode).toBe(200);
 	});
 
-	it("Al pasarle un id, debe mostrar el producto correspondiente con ese id", async () => {
+	it("Al pasarle un id, debe mostrar el producto correspondiente con ese id",  () => {
 		let idNumber = 2;
-		const idProduct = productID.body.find((x) => x.id == idNumber);
+		const idProduct = productID.body.find((pdct) => pdct.id == idNumber);
 		expect(idProduct.id).toBe(idNumber);
 		expect(productID.body).toHaveLength(1);
 	});
@@ -58,7 +58,6 @@ xdescribe("PUNTO 3", () => {
 		await api.post("/api/products/add").send(newProduct).expect(200);
 		const RouteProducts = await api.get("/api/products");
 		const contents = RouteProducts.body.map((pdct) => pdct.name);
-		console.log('nombre',contents)
 		expect(contents).toContain(newProduct.name);
 	});
 });
