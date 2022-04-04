@@ -1,0 +1,1 @@
+# Dentro de cada clase hay un Readme con las consignas de los ejercicios, más una breve explicación de cómo correr los test.
