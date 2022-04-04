@@ -1,12 +1,14 @@
-* El objetivo de esta guía práctica es que podamos afianzar y profundizar los conceptos sobre variables, 
-* tipos de datos, funciones, arrays y objetos en JS. Para esto vamos a plantear una serie de ejercicios 
-* simples que nos permitirán repasar los temas que estudiamos. 
+*******************************************************************************************************
+El objetivo de esta guía práctica es que podamos afianzar y profundizar los conceptos sobre variables, 
+tipos de datos, funciones, arrays y objetos en JS. Para esto vamos a plantear una serie de ejercicios 
+simples que nos permitirán repasar los temas que estudiamos. 
 
 
 
-## Imaginemos que estamos trabajando con el inventario de productos de un vendedor en MeLi.
-## El mismo consistirá en el siguiente array de productos:
+Imaginemos que estamos trabajando con el inventario de productos de un vendedor en MeLi.
+El mismo consistirá en el siguiente array de productos:
 
+```js
 let products = [
     { name: 'Macbook', price: 1300, quantity: 40, colors: ['silver', 'black', 'white'] },
     { name: 'Iphone', price: 1000, quantity: 50, colors: ['silver', 'red', 'white'] },
@@ -19,6 +21,7 @@ let products = [
     { name: 'Gamepad', price: 30, quantity: 25, colors: ['black', 'silver'] },
     { name: 'Monitor', price: 200, quantity: 3, colors: [] },
 ]
+```
 
 Utilizando el array anterior crear una función para cada uno de los siguientes requerimientos:
 
