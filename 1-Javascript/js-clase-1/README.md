@@ -1,7 +1,9 @@
-## Objetivo
-El objetivo de esta guía práctica es que podamos afianzar y profundizar los conceptos sobre variables, tipos de datos, condicionales y funciones. Para esto vamos a plantear una serie de ejercicios simples que nos permitirán repasar los temas que estudiamos. 
+Objetivo
+El objetivo de esta guía práctica es que podamos afianzar y profundizar los conceptos sobre variables, 
+tipos de datos, condicionales y funciones. Para esto vamos a plantear una serie de ejercicios simples 
+que nos permitirán repasar los temas que estudiamos. 
 
-## EJERCITACIÓN
+EJERCITACIÓN
 Realizar una función llamada “calculatePrice” que reciba dos parámetros,
 el primero siendo el nombre de un producto (ej: Laptop), y el segundo 
 el precio de ese producto (sin el signo $). Dicha función deberá retornar 
@@ -23,5 +25,5 @@ Cada producto tiene un costo de envío individual según su rango de precio:
 - Correr el comando npm test, verás los test fallando
 - Trabajar en el archivo 'index.js'
 - Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
-- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' 
+- A medida que vas pasando los ejercicios deberás ir quitando las 'x' a los bloques 'describe' 
 - que se encuentran en el archivo 'index.spec.js'

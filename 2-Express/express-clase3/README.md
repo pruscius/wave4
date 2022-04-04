@@ -1,5 +1,3 @@
-## Express clase 3
-
 Vamos a crear un CRUD con los siguientes endpoints que, mediante Postman, nos permita:
 
 - 1. Retornar todos los productos del array. “/api/products”,
