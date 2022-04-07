@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Se debe renderizar correctamente 1`] = `
+<DocumentFragment>
+  <nav
+    role="nav"
+  />
+</DocumentFragment>
+`;
