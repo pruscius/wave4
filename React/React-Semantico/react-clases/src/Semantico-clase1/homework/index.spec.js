@@ -1,21 +1,48 @@
-import { render, screen, asFragment } from "@testing-library/react";
-import renderer from "react-test-renderer";
-import Home from "./index";
+const { render, screen } = require("@testing-library/react");
+require("@testing-library/jest-dom/extend-expect");
 
+const Home = require("./index");
 
-describe('',()=>{
+beforeEach(() => render(<Home />));
 
-   it("Se debe renderizar correctamente", () => {
-     const { asFragment } = render(<Home />);
-			expect(asFragment()).toMatchSnapshot();
-      
-   });
+xdescribe("PUNTO 1", () => {
+	it("Debería existir una etiqueta 'nav'", () => {
+		expect(screen.getByRole("navigation")).toBeInTheDocument();
+	});
+
+	it("Debería existir una etiqueta 'header' con el role 'banner'", () => {
+		let bannerRole = screen.getByRole("banner");
+		expect(bannerRole).toBeInTheDocument();
+	});
+	it("Debería existir una etiqueta 'main' ", () => {
+		expect(screen.getByRole("main")).toBeInTheDocument();
+	});
+});
+
+xdescribe("PUNTO 2", () => {
+	it("Debería existir la etiqueta 'section' con el role 'section' ", () => {
+		let sectionTag = screen.getByRole("section");
+		expect(sectionTag).toBeInTheDocument();
+	});
+	it("Debería existir la etiqueta 'article'", () => {
+		let sectionTag = screen.getByRole("article");
+		expect(sectionTag).toBeInTheDocument();
+	});
+
+	it("Debería existir la etiqueta 'figure'", () => {
+		let sectionTag = screen.getByRole("figure");
+		expect(sectionTag).toBeInTheDocument();
+	});
+	it("Debería existir la etiqueta 'img'", () => {
+		let sectionTag = screen.getByRole("img");
+		expect(sectionTag).toBeInTheDocument();
+	});
+});
+xdescribe('PUNTO 3',()=>{
+	it("Debería existir la etiqueta 'footer'", () => {
+		let sectionTag = screen.getByRole("contentinfo");
+		expect(sectionTag).toBeInTheDocument();
+	});
+
 })
 
-
-it("La etiqueta <nav> debe tener el role 'nav' ", () => {
-   render(<Home/>)
-	const header = screen.getByRole('nav')
-   console.log(header)
-   expect(header).toBeDefined()
-});
