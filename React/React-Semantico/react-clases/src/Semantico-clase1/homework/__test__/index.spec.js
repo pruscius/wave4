@@ -5,7 +5,7 @@ require("@testing-library/jest-dom/extend-expect");
 
 beforeEach(() => render(<Home />));
 
-describe("PUNTO 1", () => {
+xdescribe("PUNTO 1", () => {
 	it("Debería existir una etiqueta 'nav'", () => {
 		expect(screen.getByRole("navigation")).toBeInTheDocument();
 	});
