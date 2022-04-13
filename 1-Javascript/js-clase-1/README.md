@@ -21,9 +21,11 @@ Cada producto tiene un costo de envío individual según su rango de precio:
 - El precio final de la compra es precio del producto + costo de envío
 
 # INDICACIONES 
-- Correr el comando npm install dentro de la carpeta homework
-- Correr el comando npm test, verás los test fallando
-- Trabajar en el archivo 'index.js'
-- Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
-- A medida que vas pasando los ejercicios deberás ir quitando las 'x' a los bloques 'describe' 
-- que se encuentran en el archivo 'index.spec.js'
+- Correr el comando 'npm install' dentro de la carpeta 'js-clase-1/homework'
+- Prestá atención a las consignas,deberás trabajar en el archivo 'js-clase-1/homework/index.js'
+- Correr el comando 'npm test', verás los test fallando
+- Deberás hacer que los test pasen (tilde verde), teniendo en cuenta el ejercicio
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'js-clase-1/homework/index.spec.js'.
+
+## info extra: ¿Por qué necesito eliminar las 'x' de los test?
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.

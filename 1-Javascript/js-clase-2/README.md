@@ -37,11 +37,13 @@ Utilizando el array anterior crear una función para cada uno de los siguientes 
 
 
 # INDICACIONES 
-- Correr el comando npm install dentro de la carpeta homework
+- Correr el comando 'npm install' dentro de la carpeta 'js-clase-2/homework'
+- Prestá atención a las consignas,deberás trabajar en el archivo 'js-clase-2/homework/exercise.js'
 - Correr el comando npm test, verás los test fallando
-- Trabajar en el archivo 'exercise.js'
-- Deberás hacer que los test pasen (tilde verde), teniendo en cuenta las consignas
-- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' 
-- que se encuentran en el archivo 'exercise.spec.js'
+- Deberás hacer que los test pasen (tilde verde), teniendo en cuenta lo que pide el ejercicio
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'js-clase-2/homework/exercise.spec.js'
 
+
+## info extra: ¿Por qué necesito eliminar las 'x' de los test?
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.
 

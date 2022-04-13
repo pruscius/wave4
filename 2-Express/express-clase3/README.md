@@ -8,9 +8,11 @@ Vamos a crear un CRUD con los siguientes endpoints que, mediante Postman, nos pe
 
 
 # INDICACIONES 
-- Correr el comando npm intsall dentro de la carpeta homework
-- Correr el comando npm test, verás los test fallando
-- Trabajar en el archivo 'product.js' que se encuentra dentro de la carpeta 'routes'
+- Correr el comando 'npm install' dentro de la carpeta 'express-clase3/homework'
+- Prestá atención a las consignas,deberás trabajar en el archivo 'express-clase3/homework/routes/product.js'
+- Correr el comando 'npm test', verás los test fallando
 - Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
-- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que
-- se encuentran en el archivo 'app.spec.js' dentro de la carpeta __test__
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'express-clase3/homework/__test__/app.spec.js'
+
+## info extra: ¿Por qué necesito eliminar las 'x' de los test?
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.

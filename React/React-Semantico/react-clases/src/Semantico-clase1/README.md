@@ -20,7 +20,12 @@ En nuestro contenido principal necesitamos que cuente con:
 
 # indicaciones 
 Dentro de cada carpeta "Semantico-clase1/Homework":
-- Para correr los test usar el comando : npm test
-- El test se volverá de color verde cuando las etiquetas estén bien definidas
-- A medida que avanzamos deberás sacar las 'x' de los test para seguir avanzando  
+
+- Prestá atención a las consignas,deberás trabajar en el archivo 'Semantico-clase1/homework/routes/product.js'
+- Correr el comando 'npm test', verás los test fallando
+- Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'homework/__test__/index.spec.js'
+
+## info extra: ¿Por qué necesito eliminar las 'x' de los test?
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.
 
