@@ -1,3 +1,5 @@
+# Objetivo
+
 El objetivo de esta guía práctica es que podamos afianzar y profundizar
  los conceptos sobre las etiquetas semánticas. Para esto vamos a plantear 
  una serie de ejercicios simples que nos permitirán repasar los temas 
@@ -5,7 +7,7 @@ El objetivo de esta guía práctica es que podamos afianzar y profundizar
 Utilizando etiquetas semánticas, vamos a armar un sitio web con una imagen 
 nuestra que lleve a nuestro perfil de Linkedin.
 
-EJERCITACIÓN   
+## EJERCITACIÓN   
 Crear una estructura semántica la cual necesitamos que cuente con:
 - Una cabecera
 - Un menú de navegación 
@@ -19,13 +21,12 @@ En nuestro contenido principal necesitamos que cuente con:
 - Pie de página donde tengamos un párrafo.
 
 # indicaciones 
-Dentro de cada carpeta "Semantico-clase1/Homework":
 
 - Prestá atención a las consignas,deberás trabajar en el archivo 'Semantico-clase1/homework/routes/product.js'
-- Correr el comando 'npm test', verás los test fallando
+- Correr el comando `npm test`, verás los test fallando
 - Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
-- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'homework/__test__/index.spec.js'
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques `describe` que se encuentran en el archivo `homework/__test__/index.spec.js`
 
 ## info extra: ¿Por qué necesito eliminar las 'x' de los test?
-- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como `skipped` y no serán evaluados.
 
