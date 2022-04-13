@@ -17,12 +17,12 @@ En este ejercicio te proponemos aplicar lo aprendido sobre formulario. En la mis
 - Intenta imitar el modelo de formulario que hay a continuación:
 
 
-Dentro de cada carpeta "Semantico-clase4/Homework":
+# Dentro de cada carpeta "Semantico-clase4/Homework":
 
 - Prestá atención a las consignas,deberás trabajar en el archivo 'Semantico-clase4/homework/clase4.js'
-- Correr el comando 'npm test', verás los test fallando
+- Correr el comando `npm test`, verás los test fallando
 - Deberás hacer que los test pasen (tilde verde), teniendo en cuenta la consigna
-- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques 'describe' que se encuentran en el archivo 'homework/clase4.spec.js'
+- A medida que vas pasando los ejercicios deberás ir quitandole las 'x' a los bloques `describe` que se encuentran en el archivo 'homework/clase4.spec.js'
 
 ## info extra: ¿Por qué necesito eliminar las 'x' de los test?
-- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como 'skipped' y no serán evaluados.
+- Para no abrumarnos con mucha información y concentrarnos en un ejercicio por vez, la 'x' nos permite saltear ciertos test. Aquellos test que contengan la 'x' se visualizarán en la consola como `skipped` y no serán evaluados.
