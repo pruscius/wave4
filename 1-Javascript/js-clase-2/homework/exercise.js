@@ -66,7 +66,7 @@ let addProduct;
 
 /*****************************************************************************
 PUNTO 7
-utiliza deleteProduct para Eliminar del array los productos fuera de stock (quantity 0)
+utiliza deleteProduct para Eliminar del array de productos a aquellos sin stock (con quantity 0)
 ******************************************************************************/
 // Tu código acá
 let deleteProduct;
@@ -89,7 +89,9 @@ let existingProducts;
 /*****************************************************************************
 PUNTO 9
 utiliza showHigherPrice para retornar los productos cuyo importe sea mayor al pasado por parametro
-showHigherPrice(500) debería devolver 2 objetos, ya que solo 2 productos tienen un valor mayor a 500
+Esta función recibe el array de productos y el importe (precio) a buscar:
+showHigherPrice(products,500) 
+debería devolver 2 objetos, ya que solo 2 productos tienen un valor mayor a 500
 ******************************************************************************/
 // Tu código acá
 let showHigherPrice;
