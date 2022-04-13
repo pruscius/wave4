@@ -1,6 +1,9 @@
 # Objetivo
-Vamos a crear un CRUD con los siguientes endpoints que, mediante Postman, nos permita:
+El objetivo de esta guía práctica es que podamos afianzar y profundizar los conceptos sobre Express y HTTP requests. Para esto vamos a plantear una serie de ejercicios simples que nos permitirán repasar los temas que estudiamos. 
 
+
+## Ejercitación
+Vamos a crear un CRUD con los siguientes endpoints que, mediante Postman, nos permita:
 1. Retornar todos los productos del array. “/api/products”,
 2. Obtener un producto específico mediante su ID “/api/products/:id”
 3. Agregar un nuevo producto “/api/products”,
