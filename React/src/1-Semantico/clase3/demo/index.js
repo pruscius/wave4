@@ -9,13 +9,10 @@ const {
 	domicilio,
 } = require("../utils/utils");
 
-
-
 function AriaExample() {
 	return (
 		<>
 			<form>
-				
 				{inputs.map((x, i) => {
 					return (
 						<label htmlFor={x.id} key={i}>
@@ -25,7 +22,6 @@ function AriaExample() {
 								tabIndex={i}
 								placeholder={x?.placeholder}
 								type={x.type}
-								
 							/>
 						</label>
 					);

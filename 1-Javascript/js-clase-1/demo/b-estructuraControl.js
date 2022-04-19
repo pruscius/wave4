@@ -21,52 +21,55 @@ if ("esto es falso") {
 let perro;
 let gato;
 
-
 if (perro) {
 	console.log(showMessage("Perro", "muy sociable", 4));
 } else if (gato) {
 	console.log(showMessage("Gato", "mañoso", 4));
 }
-let a = 1;
-let b = "1";
-let c = 2;
-let d = "2"
-
-
+// Referencia
+// let a = 1;
+// let b = "1";
+// let c = 2;
+// let d = "2"
 
 /**
-//- operadores		|				descripcion 					|			ejemplo				|		resultado	
+//! operadores		|				descripcion 					|			ejemplo				|		resultado	
 ----------------------------------------------------------------------------------
-//!  		==					|		es igual									|		a == b					|  true			
+  		==					|		es igual									|		a == b					|  true			
 ----------------------------------------------------------------------------------
-//!			===					|		es estrictamente igual		|										| false			
+			===				 |		es estrictamente igual		|										| false			
 ----------------------------------------------------------------------------------
-//!			!=					|		Es distinto 							|		a != b					| false			
+			!=					|		Es distinto 							|		a != b					| false			
 ----------------------------------------------------------------------------------
-//!			!==					|		Es estricamente distinto 	|		a !== b					| true			
+			!==					|		Es estricamente distinto 	|		a !== b					| true			
 ----------------------------------------------------------------------------------
-//!			<						|		menor qué									|		a < c						| 					
+			<						|		menor qué									|		a < c						| 					
 ----------------------------------------------------------------------------------
-//!			<=					|		menor o igual qué				 	|		c <= d					| 					
+			<=					|		menor o igual qué				 	|		c <= d					| 					
 ----------------------------------------------------------------------------------
-//!			&&					|		operador and (y)			 	|	(a == 1 && c == 2)	| 					
+			&&					|		operador and (y)			 	|	(a == 1 && c == 2)	| 					
 ----------------------------------------------------------------------------------
-//!			||					|		operador or (o)				 	|		a || b						| 					
+			||					|		operador or (o)				 	|		a || b						| 					
 ----------------------------------------------------------------------------------
-//!			! 					|		operador not (no)			 	|	 !a									| 					
+			! 					|		operador not (no)			 	|	 !a									| 					
 ----------------------------------------------------------------------------------
 
  */
+let a = 1;
+let b = "1";
+let c = 2;
+let d = "2";
 equality(a, b);
-inequality(a,c)
+inequality(a, c);
 
-if(a == 1 && c == 2)console.log('HOLA')
+if (a == 1 && c == 2) console.log("HOLA");
 
+1 < 2
+	? console.log("si es true me ejecuto yo")
+	: console.log("si es false me ejecuto yo");
 
-1 < 2 ? console.log('si es tru me ejecuto yo') : console.log('si es false me ejecuto yo') 
-
-if(1 < 2){
+if (1 < 2) {
 	console.log("si es tru me ejecuto yo");
-}else{
-	console.log("si es false me ejecuto yo"); 
+} else {
+	console.log("si es false me ejecuto yo");
 }

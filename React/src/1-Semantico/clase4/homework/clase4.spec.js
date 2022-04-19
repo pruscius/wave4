@@ -20,18 +20,18 @@ let localidad = [
 	"Sucre",
 	"Montevideo",
 ];
-describe("PUNTO 1", () => {
+xdescribe("PUNTO 1", () => {
 	describe("Implementar 3 inputs y 3 labels", () => {
 		it('Deben existir 3 inputs cuyos labels sean "nombre", "apellido" y "teléfono" ', () => {
 			let option = ["nombre", "apellido", "teléfono"];
-
+			
 			option.forEach((local) => {
 				var regex = new RegExp(local, "i");
 				expect(screen.getByLabelText(regex)).toBeInTheDocument();
 			});
 		});
 	});
-	describe("Inputs 'Nombre' y 'Apellido'", () => {
+	xdescribe("Inputs 'Nombre' y 'Apellido'", () => {
 		it("Los inputs 'Nombre' y 'Apellido' debe ser tipo 'text' ", () => {
 			expect(screen.getByLabelText(/nombre/i).type).toMatch(/text/);
 			expect(screen.getByLabelText(/apellido/i).type).toMatch(/text/);
@@ -46,7 +46,7 @@ describe("PUNTO 1", () => {
 		});
 	});
 
-	describe("Input teléfono", () => {
+	xdescribe("Input teléfono", () => {
 		it("El input debe ser de tipo 'number' y con id 'telefono' ", () => {
 			let labelTag = screen.getByLabelText(/teléfono/i);
 			expect(labelTag.type).toMatch(/number/i);
@@ -193,7 +193,7 @@ xdescribe("PUNTO 6", () => {
 		});
 	});
 });
-xdescribe('PUNTO 7',()=>{
+xdescribe("PUNTO 7", () => {
 	describe("Implementar 2 inputs y 2 labels", () => {
 		it("Deben existir 2 inputs cuyos labels sean 'Residencial' y 'Laboral' ", () => {
 			let options = ["Residencial", "Laboral"];
@@ -210,4 +210,4 @@ xdescribe('PUNTO 7',()=>{
 			expect(screen.getByLabelText(/residencial/i).type).toBe("radio");
 		});
 	});
-})
+});
