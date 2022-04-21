@@ -21,11 +21,11 @@ function calculatePrice(product, productPrice) {
 
 	switch (true) {
 		case (productPrice <= 2000):
-			return `${productPrice + 300}`;
+			return `El producto ${product} cuesta ${productPrice}. Su costo de envío es de 300. Por lo tanto el precio final es de ${productPrice + 300}.`;
 		case (productPrice > 2000 && productPrice <= 4000):
-			return `${productPrice + 500}`;
+			return `El producto ${product} cuesta ${productPrice}. Su costo de envío es de 500. Por lo tanto el precio final es de ${productPrice + 500}.`;
 		case (productPrice > 4000):
-			return `${productPrice + 700}`;
+			return `El producto ${product} cuesta ${productPrice}. Su costo de envío es de 700. Por lo tanto el precio final es de ${productPrice + 700}.`;
 		default: return 'Algo salió mal.'
 	}
 }
