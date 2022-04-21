@@ -11,17 +11,22 @@ output : "el costo de envio de una play es de 500 pesos y el precio total seria 
 *******************************************************************************/
 //Tu código acá
 
+// Hay varios casos no contemplados en esta función, sobre todo relacionados con los tipos de datos que se ingresan
+// en los parámetros.
+// Por otro lado el default case es super arbitrario.
+
 function calculatePrice(product, productPrice) {
 	if (productPrice <= 0) return 'Error';
 	if (!product || !productPrice) return 'ingresar ambos parámetros';
 
 	switch (true) {
 		case (productPrice <= 2000):
-			return `${productPrice + 300}`
+			return `${productPrice + 300}`;
 		case (productPrice > 2000 && productPrice <= 4000):
-			return `${productPrice + 500}`
+			return `${productPrice + 500}`;
 		case (productPrice > 4000):
-			return `${productPrice + 700}`
+			return `${productPrice + 700}`;
+		default: return 'Algo salió mal.'
 	}
 }
 
