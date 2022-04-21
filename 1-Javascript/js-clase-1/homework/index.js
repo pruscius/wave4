@@ -11,7 +11,19 @@ output : "el costo de envio de una play es de 500 pesos y el precio total seria 
 *******************************************************************************/
 //Tu código acá
 
+function calculatePrice(product, productPrice) {
+	if (productPrice <= 0) return 'Error';
+	if (!product || !productPrice) return 'ingresar ambos parámetros';
 
+	switch (true) {
+		case (productPrice <= 2000):
+			return `${productPrice + 300}`
+		case (productPrice > 2000 && productPrice <= 4000):
+			return `${productPrice + 500}`
+		case (productPrice > 4000):
+			return `${productPrice + 700}`
+	}
+}
 
 
 
