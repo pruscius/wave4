@@ -24,7 +24,7 @@ describe("PRIMER GET", () => {
 	});
 });
 
-xdescribe("EXTRA", () => {
+describe("EXTRA", () => {
 	it("Debe crear un array de 3 productos y guardarlo en una variable llamada 'products'", async () => {
 		expect(products.length).toBe(3);
 	});
@@ -41,6 +41,7 @@ xdescribe("EXTRA", () => {
 	});
 	it("Debe devolver el array de productos creado cuando estémos en la ruta '/products' ", async () => {
 		let response = await api.get("/api/products");
+		console.log('BODYYYYY', response.body);
 		expect(response.body.products.length).toBe(products.length);
 	});
 });

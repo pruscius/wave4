@@ -8,7 +8,7 @@ let responseGetProducts;
 let productID;
 let mockBackUp = products.slice();
 
-beforeAll(()=>{
+beforeAll(() => {
 	server.close()
 })
 beforeEach(async () => {
@@ -17,7 +17,7 @@ beforeEach(async () => {
 });
 
 describe("PUNTO 1", () => {
-	it("Debe ser un método GET a '/api/products'",  () => {
+	it("Debe ser un método GET a '/api/products'", () => {
 		expect(responseGetProducts.req.method).toBe("GET");
 		expect(responseGetProducts.res.statusCode).toBe(200);
 	});
@@ -26,21 +26,25 @@ describe("PUNTO 1", () => {
 		expect(responseGetProducts.body.length).toBe(mockBackUp.length);
 	});
 });
-Xdescribe("PUNTO 2", () => {
-	it("Debe ser un método GET a '/api/products/:id'",  () => {
+describe("PUNTO 2", () => {
+	it("Debe ser un método GET a '/api/products/:id'", () => {
 		expect(productID.req.method).toBe("GET");
 		expect(productID.res.statusCode).toBe(200);
 	});
 
-	it("Al pasarle un id, debe mostrar el producto correspondiente con ese id",  () => {
+	it("Al pasarle un id, debe mostrar el producto correspondiente con ese id", () => {
 		let idNumber = 2;
+		// En este test, está obligando a que la respuesta sea un array, ya que la está evaluando con un
+		// .find, quizás sin necesidad. Al ser un id único, podría preguntar si el id del objeto que está en 
+		// el body es el mismo que idNumber.
 		const idProduct = productID.body.find((pdct) => pdct.id == idNumber);
 		expect(idProduct.id).toBe(idNumber);
 		expect(productID.body).toHaveLength(1);
 	});
 });
 
-xdescribe("PUNTO 3", () => {
+describe("PUNTO 3", () => {
+	// Ojo con esta, porque acá está evaluando la ruta /add y en products.js evalua /products
 	it("Debería ser un método POST a '/products/add'", async () => {
 		const paramsRoute = await api.post("/api/products/add");
 		expect(paramsRoute.req.method).toBe("POST");
@@ -54,7 +58,7 @@ xdescribe("PUNTO 3", () => {
 			quantity: 9,
 			colors: ["pink", "red"],
 		};
-		
+
 		await api.post("/api/products/add").send(newProduct).expect(200);
 		const RouteProducts = await api.get("/api/products");
 		const contents = RouteProducts.body.map((pdct) => pdct.name);
@@ -62,7 +66,7 @@ xdescribe("PUNTO 3", () => {
 	});
 });
 
-xdescribe("PUNTO 4", () => {
+describe("PUNTO 4", () => {
 	it("Debe ser un metodo PUT a '/products/:id/:name'", async () => {
 		const paramsRoute = await api.put("/api/products/2/phone");
 		expect(paramsRoute.req.method).toBe("PUT");
@@ -83,7 +87,7 @@ xdescribe("PUNTO 4", () => {
 	});
 });
 
-xdescribe("PUNTO 5", () => {
+describe("PUNTO 5", () => {
 	it("Debe ser un metodo DELETE a '/products/:id'", async () => {
 		const deleteResponse = await api.delete("/api/products/2");
 		expect(deleteResponse.req.method).toBe("DELETE");

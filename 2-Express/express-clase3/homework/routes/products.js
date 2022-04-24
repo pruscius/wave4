@@ -12,6 +12,10 @@ const router = express.Router();
  ***************************************************************/
 // Tu código acá
 
+router.get('/products', (req, res) => {
+	res.send(products);
+})
+
 
 
 
@@ -25,6 +29,17 @@ const router = express.Router();
 *******************************************************************/
 // Tu código acá
 
+router.get('/products/:id', (req, res) => {
+	let { id } = req.params;
+	if (id) {
+		let product = products.find(p => p.id == id)
+		if (product) {
+			res.send([product]);
+		} else {
+			res.status(400).send('No product found.')
+		}
+	}
+})
 
 
 
@@ -36,6 +51,15 @@ const router = express.Router();
 	- Agregar un nuevo producto “/api/products”
  ***********************************************************************/
 // Tu código acá
+
+router.post('/products/add', (req, res) => {
+	let product = req.body;
+	if (product) {
+		products.push(product);
+		res.send('Product added.')
+	}
+	res.status(400).send('Error');
+})
 
 
 
@@ -49,6 +73,26 @@ const router = express.Router();
  **************************************************************************/
 // Tu código acá
 
+router.put('/products/:id/:name', (req, res) => {
+	let { id, name } = req.params;
+	if (id && name) {
+		// for (let i = 0; i < products.length; i++) {
+		// 	if (products[i].id === id) products[i][name] = name;
+		// }
+
+		// Acá la clave fue hacerle el Number a id, porque venía como string, y en el if estaba comaparando con ===
+		// lo cual nunca era true porque eran tipos de dato distintos.
+		id = Number(id);
+		products = products.map(p => {
+			if (p.id === id) {
+				p.name = name;
+			}
+			return p;
+		})
+		res.send({ name });
+	}
+	res.status(400).send('Error');
+})
 
 
 
@@ -59,6 +103,16 @@ const router = express.Router();
 	Eliminar un producto mediante su ID “/api/products/:id”,
  ***************************************************************************/
 // Tu código acá
+
+router.delete('/products/:id', (req, res) => {
+	let { id } = req.params;
+	if (id) {
+		id = Number(id);
+		products = products.filter(p => p.id !== id);
+		res.send(products)
+	}
+	res.status(400).send('Error');
+})
 
 
 
